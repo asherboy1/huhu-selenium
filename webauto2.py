@@ -42,31 +42,46 @@
 如果找不到元素， 每隔 半秒钟 再去界面上查看一次， 直到找到该元素， 或者 过了10秒 最大时长。"""
 
 # ------------------------------------------------------------------
-from selenium import webdriver
+# from selenium import webdriver
 
-wd = webdriver.Chrome(r'd:\github\chromedriver.exe')
+# wd = webdriver.Chrome(r'd:\github\chromedriver.exe')
 
-# 设置最大等待时长为 10秒
-wd.implicitly_wait(10)
+# # 设置最大等待时长为 10秒
+# wd.implicitly_wait(10)
 
-wd.get('https://www.baidu.com')
+# wd.get('https://www.baidu.com')
 
-element = wd.find_element_by_id('kw')
+# element = wd.find_element_by_id('kw')
 
-element.send_keys('黑羽魔巫宗')
-su = wd.find_element_by_id('su')
-su.click()
+# element.send_keys('黑羽魔巫宗')
+# su = wd.find_element_by_id('su')
+# su.click()
 
-element = wd.find_element_by_id('1')
-print(element.text)
-element = wd.find_element_by_id('kw')
-print(element.get_attribute('class'))  # 获取id为kw的class属性内容
+# element = wd.find_element_by_id('1')
+# print(element.text)
+# element = wd.find_element_by_id('kw')
+# print(element.get_attribute('class'))  # 获取id为kw的class属性内容
 
 
-print(element.get_attribute('outerHTML'))
-element = wd.find_element_by_class_name('t')
-# innerHTML 获取该元素内部的信息   outerHTML 获取该元素整个信息 innerText 或者 textContent获取展现在界面的内容
-print(element.get_attribute('innerHTML'))
+# print(element.get_attribute('outerHTML'))
+# element = wd.find_element_by_class_name('t')
+# # innerHTML 获取该元素内部的信息   outerHTML 获取该元素整个信息 innerText 或者 textContent获取展现在界面的内容
+# print(element.get_attribute('innerHTML'))
 
 
 # wd.quit()  # 执行完后关闭
+
+
+# ------------------------------------------------
+# element.clear() # 清除输入框已有的字符串
+# from selenium import webdriver
+# import time
+
+# wd = webdriver.Chrome(r'd:\github\chromedriver.exe')
+# wd.get('http://cdn1.python3.vip/files/selenium/test3.html')
+# wd.implicitly_wait(5)
+
+# shuru = wd.find_element_by_id('input1')
+
+# shuru.clear()
+# shuru.send_keys('7788')
