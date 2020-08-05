@@ -65,7 +65,7 @@
 
 # print(element.get_attribute('outerHTML'))
 # element = wd.find_element_by_class_name('t')
-# # innerHTML 获取该元素内部的信息   outerHTML 获取该元素整个信息 innerText 或者 textContent获取展现在界面的内容
+# # innerHTML 获取该元素内部的信息   outerHTML 获取该元素整个信息 innerText 或者 textContent获取展现在界面的内容 也可输入所需要的元素，即可打印
 # print(element.get_attribute('innerHTML'))
 
 

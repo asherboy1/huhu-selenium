@@ -10,6 +10,7 @@ wd.get('http://cdn1.python3.vip/files/selenium/sample1.html')
 # 通过 CSS Selector 选择单个元素的方法是
 
 # find_element_by_css_selector(CSS Selector参数)
+
 # 选择所有元素的方法是
 
 # find_elements_by_css_selector(CSS Selector参数)

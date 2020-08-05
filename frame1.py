@@ -14,7 +14,7 @@ wd.get('http://cdn1.python3.vip/files/selenium/sample2.html')
 wd.switch_to.frame(wd.find_element_by_css_selector(  # 也可以用WebElement对象   用的是element ’唯一‘
     'iframe[src = "sample1.html"]'))
 
-element = wd.find_elements_by_css_selector('.plant')  # 当切换到里面 不能查找 操作外层
+element = wd.find_elements_by_css_selector('.plant')  # 当切换到里面 不能操作外层
 for ele in element:
     print(ele.get_attribute('innerHTML'))
 # ---------------------------------------------------------------
