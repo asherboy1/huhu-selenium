@@ -55,7 +55,7 @@ print('checkbox当前选中的是:'+ele2.get_attribute('value'))
 # select.select_by_index()   根据选项的 次序 （从0开始），选择元素
 # select.select_by_value()   根据选项的 value属性值 ，选择元素。
 # select.select_by_visible_text()  根据选项的 可见文本 ，选择元素
-# --
+# -------------------------------
 # select.deselect_all()   去除 选中所有元素
 # select.deselect_by_index()  根据选项的次序，去除 选中元素
 # select.deselect_by_value()  根据选项的value属性值， 去除 选中元素
