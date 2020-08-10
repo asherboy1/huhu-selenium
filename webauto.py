@@ -1,16 +1,16 @@
 # from selenium import webdriver
 
-# wd = webdriver.Chrome(r'd:/github/chromedriver.exe')
+"""wd = webdriver.Chrome(r'd:/github/chromedriver.exe')"""
 # # 实例化、需要初始化  将对应浏览器的驱动植入。执行这行代码会运行驱动 打开浏览器
 
-# # pass  # 空语句 保持结构完整 可运行
-# wd.get('http://www.baidu.com')  # 命令会发送给驱动 还需要驱动将命令发回给客户端   get() 打开网站
+"""pass  # 空语句 保持结构完整 可运行
+wd.get('http://www.baidu.com')  # 命令会发送给驱动 还需要驱动将命令发回给客户端   get() 打开网站"""
 
 # # 开发者选项中 id是唯一的 根据id选择元素
 
 # # 通过find_element..... 可以寻找所需元素  此为通过id寻找  不是没有元素都有id  *重点：如何选择定位元素*
-# elemen = wd.find_element_by_id('kw')
-# elemen.send_keys('7788\n')  # send_keys() 发送字符串
+"""elemen = wd.find_element_by_id('kw')
+ elemen.send_keys('7788\n')  # send_keys() 发送字符串"""
 
 # # ---------------------------------------------
 
@@ -21,9 +21,9 @@
 
 # #通过class、标签名 定位
 
-from selenium import webdriver
 
 # 创建 WebDriver 实例对象，指明使用chrome浏览器驱动
+from selenium import webdriver
 wd = webdriver.Chrome(r'd:\github\chromedriver.exe')
 
 # WebDriver 实例对象的get方法 可以让浏览器打开指定网址

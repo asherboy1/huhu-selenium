@@ -51,6 +51,7 @@ print('checkbox当前选中的是:'+ele2.get_attribute('value'))
 # select 选择框  标签名:select  option--------------------------------------------
 
 # 需要先导入select类 : from selenium.webdriver.support.ui import Select
+
 # 类方法:
 # select.select_by_index()   根据选项的 次序 （从0开始），选择元素
 # select.select_by_value()   根据选项的 value属性值 ，选择元素。

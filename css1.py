@@ -13,12 +13,14 @@ wd.get('http://cdn1.python3.vip/files/selenium/sample1.html')
 
 # 选择所有元素的方法是
 
-# find_elements_by_css_selector(CSS Selector参数)
+"""find_elements_by_css_selector(CSS Selector参数)"""
 
-# element = wd.find_elements_by_css_selector('.animal')     根据id属性 选择元素的语法是在id号前面加上一个井号： #id值
-# element = wd.find_elements_by_css_selector('span')        根据class属性 选择元素的语法是在 class 值 前面加上一个点： .class值
-# for ele in element:
-#     print(ele.get_attribute('innerHTML'))
+element = wd.find_elements_by_css_selector(
+    '.animal')  # 根据id属性 选择元素的语法是在id号前面加上一个井号： #id值
+# 根据class属性 选择元素的语法是在 class 值 前面加上一个点： .class值
+element = wd.find_elements_by_css_selector('span')
+for ele in element:
+    print(ele.get_attribute('innerHTML'))
 
 # wd.quit()
 
@@ -29,10 +31,10 @@ wd.get('http://cdn1.python3.vip/files/selenium/sample1.html')
 
 # 要选择所有 class 属性值为 animal的元素 动物 除了这样写
 
-# elements = wd.find_elements_by_class_name('animal')
+elements = wd.find_elements_by_class_name('animal')
 # 还可以这样写
 
-# elements = wd.find_elements_by_css_selector('.animal')
+elements = wd.find_elements_by_css_selector('.animal')
 # 因为是选择 所有符合条件的 ，所以用 find_elements 而不是 find_element
 
 # css_selector 可以适用于选择不知道类型的元素
